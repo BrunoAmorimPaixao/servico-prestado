@@ -32,7 +32,7 @@ public class Cliente {
     @Column(name = "cpf", nullable = false, length = 11)
     private String cpf;
 
-    @Column(name = "data_cadastrada")
+    @Column(name = "data_cadastrada", updatable = false)
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCadastrada;
 
